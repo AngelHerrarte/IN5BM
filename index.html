@@ -8,5 +8,27 @@
 <body>
     <h1>Angel Herrarte - 2019037</h1>
     <h2>Centro Educativo Técnico Laboral KINAL</h2>
+
+    <form>
+        <label for="n1">Ingrese el primer número</label>
+        <input type="text" id="_num1">
+        <label for="n2">Ingrese el segundo número</label>
+        <input type="text" id="_num2">
+        <input type="button" onclick="suma()" value="Operar->">
+        <label for="resultado">La respuesta es:</label>
+        <input type="text" id="_num3">
+    </form>
+
+    <script>
+        var n1, n2, resultado;
+        function suma(){
+            n1 = _num1.value *1;
+            n2 = _num2.value *1;
+            resultado = n1 + n2;
+            _num3.value = resultado;
+        }
+    </script>
+
+
 </body>
 </html>
